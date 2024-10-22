@@ -1,59 +1,4 @@
-CSS_GRID/
-├── index.html
-├── products.html
-├── employees.html
-├── students.html
-├── contact.html
-├── css/
-│   └── styles.css
-└── Docs: README.md
-
 index.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Main Landing Page</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to Our Website</h1>
-        <nav>
-            <ul>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="employees.html">Employees</a></li>
-                <li><a href="students.html">Students</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="grid-container">
-        <section class="grid-item">
-            <h2>Featured Product</h2>
-            <p>Check out our latest product offering!</p>
-        </section>
-        <section class="grid-item">
-            <h2>Our Team</h2>
-            <p>Meet our dedicated team of professionals.</p>
-        </section>
-        <section class="grid-item">
-            <h2>Student Success</h2>
-            <p>Learn about our students and their achievements.</p>
-        </section>
-        <section class="grid-item">
-            <h2>Contact Us</h2>
-            <p>Get in touch for more information.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Our Website. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-
-style.css
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,6 +55,14 @@ products.html
 <body>
     <header>
         <h1>Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="grid-container">
         <div class="grid-item">Product 1</div>
@@ -118,6 +71,9 @@ products.html
         <div class="grid-item">Product 4</div>
         <div class="grid-item">Product 5</div>
     </main>
+    <footer>
+        <p>&copy; 2024 Our Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
@@ -126,6 +82,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
 }
 
 .grid-container {
@@ -140,4 +118,11 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
